@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/global.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    
+</head>
+
+<body>
+    <script src = "js/global.js" defer></script>
+    <script src = "js/index.js" defer></script>
+    <nav class="host-navbar">
+        <div class="host-navdiv">
+            <div class="host-logo"><a href="index.html">HOSTIT</a></div>
+            
+            <ul class="host-ulbar">
+                <li class="bar elem-navbar padding-left-elem"><a class="host-nav-button" href="index.html">Home</a></li>
+                <li class="bar elem-navbar"><a class="host-nav-button" href="news.html">News</a></li>
+                <li class="bar elem-navbar"><a class="host-nav-button" href="shop.html">Shop</a></li>
+                <li class="bar"><button class="signinbutton"><a class="host-signin" href="#sign-in">Sign In</a></button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="adModal" class="modal">
+        <div class="modal-content">
+          <h3>Special Offer!</h3>
+          <p>Get 20% off on your first order!</p>
+          <p>Close in <span id="timer">5</span> sec.</p>
+          <button id="closeAd" class="welcome-option-button-unactive" disabled>Close</button>
+        </div>
+      </div>
+   
+
+    <div id="sign-in" class="modal">
+        <div class="modal-content">
+            <a href ="#" class="close">&times;</a>
+            <h2 style="text-align: center; color: #fff;">Sign In</h2>
+            <form id="loginForm" autocomplete="off">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submitButton" class="welcome-option-button" style="width: 100%;">Sign In</button>
+            </form>
+            
+            <div class="social-login">
+                <p>Or sign in with:</p>
+                <button class="social-btn google-btn" >Google</button>
+                <button class="social-btn discord-btn">Discord</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="welcome-container">
+        
+        <div class="welcome-content" >
+            <h1>Welcome page</h1>
+            <p>Choose your perfect hosting solution and launch your website today!</p>
+            
+            <div class="hosting-options">
+                <div class="welcome-option">
+                    <div class="welcome-icon">🚀</div>
+                    <div class="welcome-option-text">
+                        <h2>Python Hosting</h2>
+                        <p>Affordable and easy to use</p>
+                    </div>
+                    <button class="welcome-option-button"><a href="shop.html">Select</a></button>
+                </div>
+                <div class="welcome-option">
+                    <div class="welcome-icon">🌟</div>
+                    <div class="welcome-option-text">
+                        <h2>VPS Hosting</h2>
+                        <p>More power and flexibility</p>
+                    </div>
+                    <button class="welcome-option-button"><a href="shop.html">Select</a></button>
+                </div>
+                <div class="welcome-option">
+                    <div class="welcome-icon">🏢</div>
+                    <div class="welcome-option-text">
+                        <h2>Dedicated Server</h2>
+                        <p>Ultimate performance and control</p>
+                    </div>
+                    <button class="welcome-option-button"><a href="shop.html">Select</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="img/slider-img.png" alt="Text" width="400" height="300">
+        </div>
+    </div>
+</div>
+
+<div class="feedback-section">
+    <h2>Customer Feedback</h2>
+    <div class="review-form">
+        <textarea placeholder="Share your experience with us" rows="4"></textarea>
+        <button class="review-button">Submit</button>
+    </div>
+    
+    <div class="reviews">
+        <div class="review">
+            <p class="review-text">"Amazing service! My website has never been faster."</p>
+            <strong>- John D.</strong>
+        </div>
+        <div class="review">
+            <p class="review-text">"The support team is always there when I need them. 5 stars!"</p>
+            <strong>- Sarah M.</strong>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<button onclick="scrollFunction()" class="hoverbtn" title="Go to top">Top</button>
+
+
+</html>
